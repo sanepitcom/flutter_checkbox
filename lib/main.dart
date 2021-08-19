@@ -39,7 +39,7 @@ class _CheckBoxExampleState extends State<CheckBoxExample> {
             value: isChecked,
             onChanged: (value) => setState(() {
               label = 'おかゆ' + (value! ? 'が選択されました。' : 'の選択が解除されました。');
-              setState(() => isChecked = value);
+              isChecked = value;
             }),
           ),
           SizedBox(width: 5,),
